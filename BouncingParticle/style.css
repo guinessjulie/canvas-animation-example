@@ -1,0 +1,19 @@
+:root{
+    --color-darkblue : #01001a;
+    --color-metalicblue: #08176e;
+    --color-premiumblue: rgb(66, 135, 245);
+    --color-skyblue: #4fbcf7;
+    --color-lightblue: #ace0fc;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#canvas1{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: linear-gradient(var(--color-darkblue), var(--color-metalicblue),var(--color-premiumblue));
+}
+

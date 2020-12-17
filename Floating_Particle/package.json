@@ -1,0 +1,17 @@
+{
+  "name": "FloatingParticles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {    
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
