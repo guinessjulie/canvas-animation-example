@@ -1,0 +1,80 @@
+:root{
+    --color-primary-blue: rgb(66, 135, 245);
+    --color-primary-yellow: rgb(235, 210, 5);
+}
+*{
+    box-sizing:border-box;
+}
+.container{
+    position:absolute;
+    width: 200px;
+    height: 270px;
+    top:50%;
+    left:50%;
+    transform : translate(-50%, -50%);    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button-wrapper{
+    width:100%;
+    height:50px;
+    margin-bottom:5px;
+    position:relative;
+    filter:url('#shake0');
+}
+.button-wrapper:hover{
+    transform: scale(2.);
+    z-index: -100;
+    /*filter:url('#shake0');*/
+    animation: distort .5s linear infinite ;
+}
+.button-wrapper:hover button{
+    background-color:white;
+}
+.button-wrapper:hover .button-label{
+    color:black;
+}
+
+button, .button-label{
+    width:100%;
+    height:100%;
+    position:absolute;    
+}
+
+.button-label{
+    font-size:35px;
+    text-align: center;    
+    line-height:50px;    
+    color:white;
+}
+
+button{
+    background-color:black;
+    outline: none;
+    border: none;
+}
+
+@keyframes distort{
+    0% {filter: url('#shake0');}
+    25%{filter:url('#shake1');}
+    50%{filter:url('#shake2');}
+    75%{filter:url('#shake3');}
+    100%{filter:url('#shake4');}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
